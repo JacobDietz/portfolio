@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "infinite-viewer": "^0.29.1",
+    "motion": "^12.6.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-infinite-viewer": "^0.28.1",
+    "react-transition-group": "^4.4.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
