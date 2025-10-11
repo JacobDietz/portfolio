@@ -3,7 +3,7 @@ import { NavLink } from "react-router"
 import * as motion from "motion/react-client"
 import Profile from "./profile"
 import DynamicBckg from "./background"
-import { Link } from "react-router"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function Home() {
     return (
@@ -33,6 +33,7 @@ export function NavBar() {
                     <MainNavLink text={"Contact"}></MainNavLink>
                 </ul>
             </nav>
+        </div>
     )
 }
 
