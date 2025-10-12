@@ -1,4 +1,6 @@
 import { NavBar } from "./Home";
+import React from "react";
+
 function Profile(){
     return(
         <>

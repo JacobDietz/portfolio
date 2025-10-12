@@ -4,6 +4,8 @@ import * as motion from "motion/react-client"
 import Profile from "./profile"
 import DynamicBckg from "./background"
 import { Link } from "react-router"
+import React from "react";
+
 
 function Home() {
     return (
