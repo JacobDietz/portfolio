@@ -3,15 +3,11 @@ import { NavLink } from "react-router"
 import * as motion from "motion/react-client"
 import Profile from "./profile"
 import DynamicBckg from "./background"
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link } from "react-router"
 
 function Home() {
     return (
-      <div className="relative z-10">
-        <div className="flex bg-red-900">
           <NavBar />
-        </div>
-      </div>
     );
   }
   
@@ -26,19 +22,17 @@ export function NavBar() {
                     initial={{ scale: 0 }} animate={{ scale: 1 }}
                     className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-sans font-medium ml-20 tracking-tighter text-white ">Dietz</motion.h2>
 
-                <ul className="flex row ">
+                <ul className="flex">
                     <MainNavLink text={"About Me"} to="profile"></MainNavLink>
                     <MainNavLink text={"Projects"}></MainNavLink>
                     <MainNavLink text={"Resume"}></MainNavLink>
                     <MainNavLink text={"Contact"}></MainNavLink>
                 </ul>
             </nav>
-        </div>
     )
 }
 
 export function MainNavLink({ text, to, url=`localhost:5173/${to}` }){
-    console.log("hello" + `/${to}` )
     return (
         <motion.li
             whileHover={{ scale: 1.1 }}
@@ -47,7 +41,7 @@ export function MainNavLink({ text, to, url=`localhost:5173/${to}` }){
         
 
             className=" text-white font-sans sm:text-xl md:text-2xl lg:text-4xl font-bold pl-5 pr-5 
-            underline sm:decoration-1 md:decoration-3 decoration-5 rounded-xl underline-offset-8">
+            underline sm:decoration-1 md:decoration-3 lg:decoration-5 rounded-xl underline-offset-8">
              <Link to={`/${to}`}>{text}</Link> 
         </motion.li>
     )

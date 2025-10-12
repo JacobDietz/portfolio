@@ -1,15 +1,15 @@
 @import "tailwindcss";
   .first-layer {
-    animation: reverse-spin 20s linear infinite;
+    animation: reverse-spin 5s linear infinite;
   }
   .second-layer {
     animation: reverse-spin 10s linear infinite;
   }
   .third-layer {
-    animation: spin 10s linear infinite;
+    animation: spin 5s linear infinite;
   }
   .fourth-layer {
-    animation: spin 10s linear infinite;
+    animation: spin 5s linear infinite;
   }
 .fifth-layer {
   animation: reverse-spin 10s linear infinite;
