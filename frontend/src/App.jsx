@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Home from "./Home.jsx";
 import DynamicBckg from "./background.jsx"; 
 import Profile from "./profile.jsx";
