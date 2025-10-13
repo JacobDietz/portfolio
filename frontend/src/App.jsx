@@ -7,7 +7,7 @@ import React from "react";
 
 function App() {
   return (
-    <div class="relative min-h-[100svh] no-scrollbar">
+    <div className="relative min-h-screen no-scrollbar ">
         <DynamicBckg />
 
       <BrowserRouter>

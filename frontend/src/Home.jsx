@@ -19,10 +19,12 @@ export function NavBar() {
             <nav className="fixed">
                 <motion.h1
                     initial={{ scale: 0 }} animate={{ scale: 1 }}
-                    className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-sans font-medium ml-10 mt-5 tracking-tighter text-white ">Jacob</motion.h1>
+                    className="sm:text-6xl md:text-8xl lg:text-9xl font-sans font-medium ml-10 
+                    mt-5 tracking-tighter text-white ">Jacob</motion.h1>
                 <motion.h2
                     initial={{ scale: 0 }} animate={{ scale: 1 }}
-                    className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-sans font-medium ml-20 tracking-tighter text-white ">Dietz</motion.h2>
+                    className="sm:text-8xl md:text-9xl lg:text-9xl font-sans font-medium ml-20 
+                    tracking-tighter text-white ">Dietz</motion.h2>
 
                 <ul className="flex">
                     <MainNavLink text={"About Me"} to="profile"></MainNavLink>
