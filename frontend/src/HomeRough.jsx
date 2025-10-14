@@ -7,24 +7,26 @@ import { Link } from "react-router"
 import React from "react";
 
 
-function Home() {
+function HomeRough() {
     return (
+        <div className="">
           <NavBar />
+          </div>
     );
   }
   
 
 export function NavBar() {
     return (
-            <nav className="fixed">
+            <nav className="">
                 <motion.h1
                     initial={{ scale: 0 }} animate={{ scale: 1 }}
-                    className="text-6xl sm:text-6xl md:text-8xl lg:text-9xl font-sans font-medium ml-10 
+                    className="text-6xl sm:text-8xl md:text-9xl lg:text-9xl font-sans font-medium ml-10 
                     mt-5 tracking-tighter text-white ">Jacob</motion.h1>
-                <motion.h2
+                <motion.h1
                     initial={{ scale: 0 }} animate={{ scale: 1 }}
                     className="text-6xl sm:text-8xl md:text-9xl lg:text-9xl font-sans font-medium ml-20 
-                    tracking-tighter text-white ">Dietz</motion.h2>
+                    tracking-tighter text-white ">Dietz</motion.h1>
 
                 <ul className="flex">
                     <MainNavLink text={"About Me"} to="profile"></MainNavLink>
@@ -54,4 +56,4 @@ export function MainNavLink({ text, to, url=`localhost:5173/${to}` }){
 
 
 
-export default Home;
+export default HomeRough;

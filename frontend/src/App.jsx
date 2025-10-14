@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home.jsx";
+import HomeRough from "./HomeRough.jsx";
 import DynamicBckg from "./background.jsx"; 
 import Profile from "./profile.jsx";
 import React from "react";
@@ -7,12 +7,12 @@ import React from "react";
 
 function App() {
   return (
-    <div className="relative min-h-screen no-scrollbar ">
+    <div className="flex justify-center items-center relative min-h-screen no-scrollbar overflow-auto ">
         <DynamicBckg />
 
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<HomeRough />} />
           <Route path="/profile" element={<Profile />} />
         </Routes>
       </BrowserRouter>

@@ -2,7 +2,8 @@
 import './index.css'
 export default function DynamicBckg() {
     return (
-        <div className='fixed inset-0 -z-10 flex items-center justify-center min-h-screen min-w-screen bg-gradient-to-r from-indigo-200 via-lime-100 to-blue-200' >
+        <div className='fixed inset-0 -z-10 flex items-center justify-center min-h-screen min-w-screen bg-gradient-to-r 
+        from-indigo-200 via-zinc-100 to-slate-300' >
             <section className="absolute fifth-layer blur-xl opacity-90 bg-sky-300 rounded-4xl border-3 border-dotted
   h-[30dvh] aspect-[1/1]    -translate-x-20 translate-y-20"></section>
 
