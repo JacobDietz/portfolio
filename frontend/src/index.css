@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
   .first-layer {
     animation: reverse-spin 10s linear infinite;
@@ -29,6 +30,10 @@
     to { transform: rotate(0deg); }
   }
 
+  @theme {
+    --font-roboto: "roboto", "sans-seriff"; 
+
+  } 
  
   @utility no-scrollbar {
     @apply [scrollbar-width:none] [&::-webkit-scrollbar]:hidden;
