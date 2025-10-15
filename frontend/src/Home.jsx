@@ -1,11 +1,9 @@
 import contact from "./contact"
-import { NavLink } from "react-router"
 import * as motion from "motion/react-client"
 import Profile from "./profile"
 import DynamicBckg from "./background"
-import { Link } from "react-router"
 import React from "react";
-
+import { NavLink, Link } from "react-router-dom"
 
 function Home() {
     return (
@@ -30,20 +28,21 @@ export function NavBar() {
                     <MainNavLink text={"About Me"} to="profile"></MainNavLink>
                     <MainNavLink text={"Projects"}></MainNavLink>
                     <MainNavLink text={"Resume"}></MainNavLink>
-                    <MainNavLink text={"Contact"}></MainNavLink>
+                    <MainNavLink text={"Contact"} to="contact"></MainNavLink>
                 </ul>
             </nav>
     )
 }
 
 export function MainNavLink({ text, to, url=`localhost:5173/${to}` }){
+    console.log("nav link made ", to);
     return (
         <motion.li
             whileHover={{ scale: 1.1 }}
             initial={{ scale: 0 }} animate={{ scale: 1 }}
             whileInView={{ opacity: 1 }}
         
-
+ 
             className=" text-white font-sans text-base sm:text-xl md:text-2xl lg:text-4xl font-bold pl-4 pr-4 
             underline sm:decoration-1 md:decoration-3 lg:decoration-5 rounded-xl underline-offset-8">
              <Link to={`/${to}`}>{text}</Link> 

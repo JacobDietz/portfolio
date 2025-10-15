@@ -29,16 +29,16 @@ export function NavBar() {
                     tracking-tighter text-white ">Dietz</motion.h1>
 
                 <ul className="flex">
-                    <MainNavLink text={"About Me"} to="profile"></MainNavLink>
                     <MainNavLink text={"Projects"}></MainNavLink>
+                    <MainNavLink text={"GitHub"} to="profile"></MainNavLink>
                     <MainNavLink text={"Resume"}></MainNavLink>
-                    <MainNavLink text={"Contact"}></MainNavLink>
+                    <MainNavLink text={"Contact"} to="contact"></MainNavLink>
                 </ul>
             </nav>
     )
 }
 
-export function MainNavLink({ text, to, url=`localhost:5173/${to}` }){
+export function MainNavLink({ text, to}){
     return (
         <motion.li
             whileHover={{ scale: 1.1 }}
