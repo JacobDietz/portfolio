@@ -22,7 +22,7 @@ export function NavBar() {
                 <motion.h2
                     initial={{ scale: 0 }} animate={{ scale: 1 }}
                     className="text-6xl sm:text-8xl md:text-9xl lg:text-9xl font-sans font-medium ml-20 
-                    tracking-tighter text-white ">Dietz</motion.h2>
+                    tracking-tighter text-red-300 ">Dietz</motion.h2>
 
                 <ul className="flex">
                     <MainNavLink text={"About Me"} to="profile"></MainNavLink>

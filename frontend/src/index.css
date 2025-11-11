@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import "tailwindcss";
+
+
+@theme {
+  --color-projectsBG: #FEFEE3;
+  --color-customBG: #F211FF;
+  --color-customBlue: #7A9CC6;
+  --color-customGreen: #648767;
+
+}
   .first-layer {
     animation: reverse-spin 10s linear infinite;
   }

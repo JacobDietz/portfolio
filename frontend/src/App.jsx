@@ -4,6 +4,7 @@ import DynamicBckg from "./background.jsx";
 import Profile from "./profile.jsx";
 import React from "react";
 import Contact from "./contact.jsx";
+import Projects from "./pages/projectsPage.jsx";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<HomeRough />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/projects" element={<Projects/>} />
         </Routes>
       </BrowserRouter>
       </div> 
