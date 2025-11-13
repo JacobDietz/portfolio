@@ -37,7 +37,7 @@ function MainNavLink({ text, url }) {
             whileInView={{ opacity: 1 }}
 
 
-            className=" text-white font-roboto text-base sm:text-lg md:text-xl lg:text-3xl font-bold pl-4 pr-4 
+            className=" text-white font-roboto text-base text-lg md:text-xl lg:text-3xl font-bold pl-4 pr-4 
             underline sm:decoration-1 md:decoration-3 lg:decoration-5 rounded-xl underline-offset-8">
 
             {externalLink ? (
