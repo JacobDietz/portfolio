@@ -18,6 +18,7 @@ export default function NavBar() {
             <ul className="flex">
                 <MainNavLink text={"Projects"} url="/projects"></MainNavLink>
                 <MainNavLink text={"GitHub"} url={"https://github.com/JacobDietz"}></MainNavLink>
+                <MainNavLink text={"linkedin"} url="https://www.linkedin.com/in/jacob-dietz-8851b8222/"></MainNavLink>
                 <MainNavLink text={"Resume"} url="resume.pdf"></MainNavLink>
                 <MainNavLink text={"Contact"} url="/contact"></MainNavLink>
             </ul>
@@ -36,7 +37,7 @@ function MainNavLink({ text, url }) {
             whileInView={{ opacity: 1 }}
 
 
-            className=" text-white font-roboto text-base sm:text-xl md:text-2xl lg:text-4xl font-bold pl-4 pr-4 
+            className=" text-white font-roboto text-base sm:text-lg md:text-xl lg:text-3xl font-bold pl-4 pr-4 
             underline sm:decoration-1 md:decoration-3 lg:decoration-5 rounded-xl underline-offset-8">
 
             {externalLink ? (
