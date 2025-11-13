@@ -1,4 +1,4 @@
-import ponyExpress from "../assets/ponyExpress.png";
+// import ponyExpress from "../../public/ponyExpress.png";
 import * as motion from "motion/react-client";
 import { useNavigate } from "react-router";
 import { Link } from 'react-router-dom';
@@ -61,7 +61,7 @@ export default function Projects() {
               whileInView={{ opacity: 1 }}
               alt="Pony Express"
               className="w-1/3 shadow-[0px_0px_10px_0.1px_#ffffff] rounded-xl absolute"
-              src="/src/assets/ponyExpress.png"
+              src="../../ponyExpress.png"
               onClick={() => {
                 console.log("express clicked");
                 navigate("/ponyExpress");
