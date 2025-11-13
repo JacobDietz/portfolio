@@ -3,14 +3,19 @@ import * as motion from "motion/react-client";
 
 export default function NavBar() {
     return (
+        
         <nav className="">
             <div className="">
                 <motion.h1
-                    initial={{ scale: 0 }} animate={{ scale: 1 }}
+                    initial={{ y: -100, opacity: 1 }}   
+                    animate={{ y: 0, opacity: 1 }}      
+                    transition={{ type: "spring", stiffness: 50, damping: 20 }}
                     className="leading-none m-0 text-6xl sm:text-6xl md:text-9xl font-roboto tracking-tighter font-medium ml-10 
                     tracking-[-0.03em] md:tracking-[-0.09em] text-white">Jacob</motion.h1>
                 <motion.h1
-                    initial={{ scale: 0 }} animate={{ scale: 1 }}
+                    initial={{ y: -100, opacity: 1 }}   
+                    animate={{ y: 0, opacity: 1 }}      
+                    transition={{ type: "spring", stiffness: 50, damping: 20 }}
                     className="leading-none -mt-2rem md:-mt-8 sm:text-8xl md:text-9xl lg:text-9xl font-sans font-medium ml-20 
                 tracking-[-0.03em] md:tracking-[-0.05em] text-white ">Dietz</motion.h1>
             </div>
@@ -23,6 +28,7 @@ export default function NavBar() {
                 <MainNavLink text={"Contact"} url="/contact"></MainNavLink>
             </ul>
         </nav>
+        
     )
 }
 

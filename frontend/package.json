@@ -12,8 +12,12 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.7",
+    "@react-three/postprocessing": "^3.0.4",
+    "@whatisjery/react-fluid-distortion": "^1.5.1",
     "infinite-viewer": "^0.29.1",
     "motion": "^12.6.3",
+    "postprocessing": "^6.38.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-infinite-viewer": "^0.28.1",
