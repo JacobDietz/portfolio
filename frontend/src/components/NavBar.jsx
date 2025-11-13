@@ -17,7 +17,7 @@ export default function NavBar() {
 
             <ul className="flex">
                 <MainNavLink text={"Projects"} url="/projects"></MainNavLink>
-                <MainNavLink text={"GitHub"} url={"https://github.com/JacobDietz"}></MainNavLink>
+                <MainNavLink text={"Github"} url={"https://github.com/JacobDietz"}></MainNavLink>
                 <MainNavLink text={"linkedin"} url="https://www.linkedin.com/in/jacob-dietz-8851b8222/"></MainNavLink>
                 <MainNavLink text={"Resume"} url="resume.pdf"></MainNavLink>
                 <MainNavLink text={"Contact"} url="/contact"></MainNavLink>
