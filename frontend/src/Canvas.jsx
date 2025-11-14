@@ -1,7 +1,8 @@
 import { Canvas as R3fCanvas } from '@react-three/fiber';
 import { Suspense } from 'react';
 
-import { HomeTunnel, ProjectsTunnel } from '../../threeTunnel';
+//import { HomeTunnel, ProjectsTunnel } from '../../threeTunnel';
+import { HomeTunnel, ProjectsTunnel } from './threeTunnel';
 
 const Canvas = () => {
     return (

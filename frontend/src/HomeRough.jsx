@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { Canvas } from "@react-three/fiber";
 import { Fluid } from "@whatisjery/react-fluid-distortion";
 import { EffectComposer } from "@react-three/postprocessing";
-import { HomeTunnel } from "../../threeTunnel";
+import { HomeTunnel } from "./threeTunnel";
 import DynamicBckg from "./background";
 
 function HomeRough() {

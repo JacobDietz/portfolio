@@ -8,7 +8,7 @@ import { Canvas } from "@react-three/fiber";
 import { EffectComposer } from "@react-three/postprocessing";
 import { Fluid } from "@whatisjery/react-fluid-distortion";
 
-import { ProjectsTunnel, ThreeTunnel } from "../../../threeTunnel";
+import { ProjectsTunnel, ThreeTunnel } from "../threeTunnel";
 
 
 
