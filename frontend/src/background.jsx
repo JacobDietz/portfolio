@@ -8,7 +8,8 @@ export default function DynamicBckg() {
   return (
     <div className="fixed inset-0 -z-10 overflow-hidden">
       {/* Tailwind-colored blobs */}
-      <div className="absolute inset-0 flex items-center justify-center min-h-screen min-w-screen bg-gradient-to-r from-indigo-200 via-zinc-100 to-slate-300">
+      {/* <div className="absolute inset-0 flex items-center justify-center min-h-screen min-w-screen bg-gradient-to-r from-indigo-200 via-zinc-100 to-slate-300"> */}
+      <div className="absolute inset-0 flex items-center justify-center min-h-screen min-w-screen bg-gradient-to-r from-slate-400 via-zinc-200 to-slate-400">
         <section className="absolute blur-3xl opacity-90 bg-sky-300 rounded-4xl border-3 border-dotted h-[30dvh] aspect-square -translate-x-20 translate-y-20"></section>
         <section className="absolute blur-3xl opacity-90 bg-amber-300 rounded-4xl h-[30dvh] aspect-square -translate-x-20 -translate-y-20"></section>
         <section className="absolute blur-3xl opacity-90 bg-lime-600 rounded-4xl h-[30dvh] aspect-square translate-x-20 translate-y-20"></section>
@@ -17,27 +18,29 @@ export default function DynamicBckg() {
       </div>
 
       {/* Transparent WebGL fluid distortion layer */}
-      <Canvas
-        gl={{ preserveDrawingBuffer: true, alpha: true }}
+      {/* <Canvas
+        gl={{ preserveDrawingBuffer: false, alpha: true }}
         style={{ background: 'transparent' }}
       >
         <EffectComposer>
           <Fluid
             showBackground={false}
-            intensity={8}
-            swirl={15}
-            fluidColor="#005eff"
+            intensity={9}
+            swirl={50}
+            fluidColor="#6E1B09"
             rainbow={true}
-            blend={9}
+            blend={5}
             distortion={2}
-            pressure={0.8}
-            velocityDissipation={0.99}
-            curl={1}
-            radius={0.2}
+            pressure={0.2}
+            velocityDissipation={0.45}
+            densitionDissipatio={0}
+            curl={10}
+            radius={0.25}
+            vorticity={30}
             
           />
         </EffectComposer>
-      </Canvas>
+      </Canvas> */}
     </div>
   );
 }
