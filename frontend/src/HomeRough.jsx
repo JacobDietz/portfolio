@@ -15,13 +15,13 @@ function HomeRough() {
         <EffectComposer>
           <Fluid
             showBackground={false}
-            blend={10}
-            intensity={15}
-            swirl={60}
-            distortion={3}
+            blend={30}
+            intensity={20}
+            swirl={10}
+            distortion={10}
             pressure={0.05}
-            radius={0.2}
-            fluidColor="#3BF74E"
+            radius={0.3}
+            fluidColor="#FFC0CB"
             />
         </EffectComposer>
       </HomeTunnel.In>
