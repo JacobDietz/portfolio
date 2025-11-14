@@ -21,7 +21,7 @@ function App() {
         <Route
           element={
             <div className="relative min-h-screen">
-              <DynamicBckg />
+              {/* <DynamicBckg /> */}
               <Outlet />
             </div>
           }

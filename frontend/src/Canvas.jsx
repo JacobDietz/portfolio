@@ -12,7 +12,8 @@ const Canvas = () => {
                 left: 0,
                 height: '100vh',
                 width: '100vw',
-                pointerEvents: 'none'
+                pointerEvents: 'none',
+                zIndex: 0, 
             }}>
             <Suspense fallback={null}>
                 <ProjectsTunnel.Out />

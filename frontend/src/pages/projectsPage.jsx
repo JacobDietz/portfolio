@@ -21,19 +21,14 @@ export default function Projects() {
     <ProjectsTunnel.In>
     <EffectComposer>
                 <Fluid 
-                showBackground={false}
-                intensity={9}
-                swirl={50}
-                fluidColor="#6E1B09"
-                rainbow={true}
-                blend={5}
-                distortion={2}
-                pressure={0.2}
-                velocityDissipation={0.45}
-                densitionDissipatio={0}
-                curl={10}
-                radius={0.25}
-                vorticity={30}
+                 showBackground={false}
+                 blend={10}
+                 intensity={15}
+                 swirl={60}
+                 distortion={3}
+                 pressure={0.05}
+                 radius={0.2}
+                 fluidColor="#3BF74E" 
                  />
             </EffectComposer>
             </ProjectsTunnel.In>
