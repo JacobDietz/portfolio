@@ -10,13 +10,13 @@ export default function NavBar() {
                     initial={{ y: -100, opacity: 1 }}   
                     animate={{ y: 0, opacity: 1 }}      
                     transition={{ type: "spring", stiffness: 50, damping: 20 }}
-                    className="leading-none m-0 text-6xl sm:text-6xl md:text-9xl font-roboto tracking-tighter font-medium ml-10 
+                    className="leading-none m-0 text-6xl md:text-9xl font-roboto tracking-tighter font-medium ml-10 
                     tracking-[-0.03em] md:tracking-[-0.09em] text-white">Jacob</motion.h1>
                 <motion.h1
                     initial={{ y: -100, opacity: 1 }}   
                     animate={{ y: 0, opacity: 1 }}      
                     transition={{ type: "spring", stiffness: 50, damping: 20 }}
-                    className="leading-none -mt-2rem md:-mt-8 sm:text-8xl md:text-9xl lg:text-9xl font-sans font-medium ml-20 
+                    className="leading-none -mt-2rem md:-mt-8 text-6xl md:text-9xl lg:text-9xl font-sans font-medium ml-20 
                 tracking-[-0.03em] md:tracking-[-0.05em] text-white ">Dietz</motion.h1>
             </div>
 
@@ -43,7 +43,7 @@ function MainNavLink({ text, url }) {
             whileInView={{ opacity: 1 }}
 
 
-            className=" text-white font-roboto text-base text-lg md:text-xl lg:text-3xl font-bold pl-4 pr-4 
+            className=" text-white font-roboto text-base text-lg md:text-xl lg:text-3xl font-bold md:pl-4 md:pr-4 px-2
             underline sm:decoration-1 md:decoration-3 lg:decoration-5 rounded-xl underline-offset-8">
 
             {externalLink ? (

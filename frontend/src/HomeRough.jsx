@@ -26,7 +26,6 @@ function HomeRough() {
         </EffectComposer>
       </HomeTunnel.In>
 
-      {/* Static UI Content */}
       <div className="relative z-10 min-h-screen flex items-center justify-center overflow-hidden">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

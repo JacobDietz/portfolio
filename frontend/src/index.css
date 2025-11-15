@@ -4,9 +4,13 @@
 
 @theme {
   --color-projectsBG: #FEFEE3;
-  --color-customBG: #F211FF;
   --color-customBlue: #7A9CC6;
   --color-customGreen: #648767;
+  --color-customRed: #FF928B;
+  --color-noteCardColor: #FEFEE3;
+  --color-customWhite: #F9F6EE;
+  --font-display: "Satoshi", sans-serif;
+
 
 }
   .first-layer {

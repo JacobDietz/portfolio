@@ -11,11 +11,9 @@ import Canvas from "./Canvas.jsx";
 
 function App() {
   return (
-
-    
     <BrowserRouter>
       {/* Canvas is always present for every route */}
- <Canvas />
+      <Canvas />
       <Routes>
         {/* Routes that should HAVE DynamicBckg */}
         <Route
@@ -30,23 +28,20 @@ function App() {
           <Route path="/contact" element={<Contact />} />
         </Route>
 
-        {/* Routes WITHOUT DynamicBckg */}
         <Route path="/profile" element={<Profile />} />
 
-        <Route
+         <Route
           path="/projects"
           element={
             <motion.div
-              initial={{ scale: 1, filter: "blur(99px)", opacity: 1 }}
+              initial={{ scale: 1, filter: "blur(0px)", opacity: 1 }}
               animate={{ scale: 1, filter: "blur(0px)", opacity: 1 }}
-              transition={{ duration: 0.2, ease: "easeOut" }}
+              transition={{ duration: 0.2, ease: "linear" }}
             >
               <Projects />
             </motion.div>
           }
         />
-
-
       </Routes>
       <Canvas />
     </BrowserRouter>
