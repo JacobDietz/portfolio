@@ -5,7 +5,7 @@ import { Fluid } from "@whatisjery/react-fluid-distortion";
 import { EffectComposer } from "@react-three/postprocessing";
 import { HomeTunnel } from "./threeTunnel";
 import DynamicBckg from "./background";
-import ContactBar from "./components/contactBar";
+// import ContactBar from "./components/contactBar";
 
 // import { Button, Dialog, DialogPanel, DialogTitle } from '@headlessui/react'
 // import { useState } from 'react'
