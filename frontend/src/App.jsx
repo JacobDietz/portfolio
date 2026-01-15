@@ -2,35 +2,39 @@ import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import React from "react";
 import { motion } from "framer-motion";
 
-import HomeRough from "./HomeRough.jsx";
+import Home from "./Home.jsx";
 import DynamicBckg from "./background.jsx";
 import Profile from "./profile.jsx";
 import Contact from "./contact.jsx";
-import Projects from "./pages/projectsPage.jsx";
+
+import ProjectDetail from "./pages/projects/ProjectDetail"
 import Canvas from "./Canvas.jsx";
+import { useParams } from "react-router-dom";
+
+
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Canvas is always present for every route */}
-      <Canvas />
+      {/* <Canvas /> */}
       <Routes>
-        {/* Routes that should HAVE DynamicBckg */}
         <Route
           element={
             <div className="relative min-h-screen">
-              {/* <DynamicBckg /> */}
+              {/* <Canvas /> */}
+              <DynamicBckg />
               <Outlet />
             </div>
           }
         >
-          <Route path="/" element={<HomeRough />} />
+          <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="ponyExpress/:id" element={<ProjectDetail />} />
+          <Route path="/*" element={<NotFound />} />
         </Route>
-
-        <Route path="/profile" element={<Profile />} />
-
-         <Route
+        {/* <Route path="/profile" element={<Profile />} /> */}
+        {/* <Route path="/ponyExpress" element={<PonyExpress />} />
+        <Route
           path="/projects"
           element={
             <motion.div
@@ -41,11 +45,15 @@ function App() {
               <Projects />
             </motion.div>
           }
-        />
+        /> */}
       </Routes>
       <Canvas />
     </BrowserRouter>
   );
+}
+
+function NotFound() {
+  return <h1>404: Not Found</h1>;
 }
 
 export default App;
